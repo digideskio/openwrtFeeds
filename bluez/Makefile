@@ -84,5 +84,5 @@ define Package/bluez-libs/install
 	$(CP) $(PKG_INSTALL_DIR)$(STAGING_DIR)/lib/udev/rules.d/* $(1)/lib/udev/rules.d/
 endef
 
-$(eval $(call BuildPackage,bluez-utils))
 $(eval $(call BuildPackage,bluez-libs))
+$(eval $(call BuildPackage,bluez-utils))
